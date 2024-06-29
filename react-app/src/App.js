@@ -3,6 +3,13 @@ import UseStatePrev from './components/state/UseStatePrev';
 import Usestateobject from './components/state/Usestateobject';
 import UsestateArray from './components/state/UsestateArray';
 import UseFetchData from './components/effect/UseFetchData';
+import CompA from './components/context/CompA';
+import React from 'react';
+import Counter from './components/reducer/SimpleCounter';
+import ComplexCounter from './components/reducer/complexCounter';
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
@@ -12,9 +19,18 @@ function App() {
       <h1>State as a Object</h1>
       <Usestateobject />
       <h1>State as a Array</h1>
-      <UsestateArray /> */}
+      <UsestateArray />
       <h1>Useeffect</h1>
       <UseFetchData />
+      <h1>useContext</h1>
+      <UserContext.Provider value={'Kanchi'}>
+        <ChannelContext.Provider value={'starplus'}>
+          <CompA />
+        </ChannelContext.Provider>
+      </UserContext.Provider> */}
+      <h1>Usereducer</h1>
+      <Counter />
+      <ComplexCounter />
     </div>
   );
 }

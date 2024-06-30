@@ -7,6 +7,8 @@ import CompA from './components/context/CompA';
 import React from 'react';
 import Counter from './components/reducer/SimpleCounter';
 import ComplexCounter from './components/reducer/complexCounter';
+import MultipleReducers from './components/reducer/MultipleReducers';
+import ContextReducer from './components/reducer/ContextReducer';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -29,8 +31,11 @@ function App() {
         </ChannelContext.Provider>
       </UserContext.Provider> */}
       <h1>Usereducer</h1>
-      <Counter />
+      {/* <Counter />
       <ComplexCounter />
+      <MultipleReducers /> */}
+      <h1>context reducer</h1>
+      <ContextReducer />
     </div>
   );
 }

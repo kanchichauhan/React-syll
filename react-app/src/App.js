@@ -10,6 +10,7 @@ import ComplexCounter from './components/reducer/complexCounter';
 import MultipleReducers from './components/reducer/MultipleReducers';
 import ContextReducer from './components/reducer/ContextReducer';
 import FetchReducer from './components/reducer/FetchReducer';
+import UseMemo from './components/UseMemo';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -36,9 +37,11 @@ function App() {
       <ComplexCounter />
       <MultipleReducers />
       <h1>context reducer</h1>
-      <ContextReducer /> */}
+      <ContextReducer />
       <h1>Fetch reducer</h1>
-      <FetchReducer />
+      <FetchReducer /> */}
+      <h1>Use memo</h1>
+      <UseMemo />      
     </div>
   );
 }

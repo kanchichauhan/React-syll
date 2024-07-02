@@ -11,6 +11,7 @@ import MultipleReducers from './components/reducer/MultipleReducers';
 import ContextReducer from './components/reducer/ContextReducer';
 import FetchReducer from './components/reducer/FetchReducer';
 import UseMemo from './components/UseMemo';
+import Main from './components/UseCallback/Main';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -40,8 +41,10 @@ function App() {
       <ContextReducer />
       <h1>Fetch reducer</h1>
       <FetchReducer /> */}
-      <h1>Use memo</h1>
-      <UseMemo />      
+      {/* <h1>Use memo</h1>
+      <UseMemo />       */}
+      <h1>use callback</h1>
+      <Main />
     </div>
   );
 }

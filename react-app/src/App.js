@@ -12,6 +12,7 @@ import ContextReducer from './components/reducer/ContextReducer';
 import FetchReducer from './components/reducer/FetchReducer';
 import UseMemo from './components/UseMemo';
 import Main from './components/UseCallback/Main';
+import Parent from './components/passingChildToParent/Parent';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -43,8 +44,9 @@ function App() {
       <FetchReducer /> */}
       {/* <h1>Use memo</h1>
       <UseMemo />       */}
-      <h1>use callback</h1>
-      <Main />
+      {/* <h1>use callback</h1>
+      <Main /> */}
+      <Parent />
     </div>
   );
 }

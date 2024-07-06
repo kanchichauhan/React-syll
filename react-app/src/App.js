@@ -1,24 +1,27 @@
 import './App.css';
-import UseStatePrev from './components/state/UseStatePrev';
-import Usestateobject from './components/state/Usestateobject';
-import UsestateArray from './components/state/UsestateArray';
-import UseFetchData from './components/effect/UseFetchData';
-import CompA from './components/context/CompA';
+// import UseStatePrev from './components/state/UseStatePrev';
+// import Usestateobject from './components/state/Usestateobject';
+// import UsestateArray from './components/state/UsestateArray';
+// import UseFetchData from './components/effect/UseFetchData';
+// import CompA from './components/context/CompA';
 import React from 'react';
-import Counter from './components/reducer/SimpleCounter';
-import ComplexCounter from './components/reducer/complexCounter';
-import MultipleReducers from './components/reducer/MultipleReducers';
-import ContextReducer from './components/reducer/ContextReducer';
-import FetchReducer from './components/reducer/FetchReducer';
-import UseMemo from './components/UseMemo';
-import Main from './components/UseCallback/Main';
-import Parent from './components/passingChildToParent/Parent';
+// import Counter from './components/reducer/SimpleCounter';
+// import ComplexCounter from './components/reducer/complexCounter';
+// import MultipleReducers from './components/reducer/MultipleReducers';
+// import ContextReducer from './components/reducer/ContextReducer';
+// import FetchReducer from './components/reducer/FetchReducer';
+// import UseMemo from './components/UseMemo';
+// import Main from './components/UseCallback/Main';
+// import Parent from './components/passingChildToParent/Parent';
+import AddTodo from './components/AddTodo';
+import Todos from './components/Todos';
 
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
 
 function App() {
   return (
+
     <div className="App">
       {/* <h1>State Previous value</h1>
       <UseStatePrev />
@@ -46,7 +49,11 @@ function App() {
       <UseMemo />       */}
       {/* <h1>use callback</h1>
       <Main /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <h1>REDUX TOOLKIT</h1>
+        <AddTodo />
+        <Todos />
+      
     </div>
   );
 }

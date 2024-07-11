@@ -13,13 +13,20 @@ import React from 'react';
 // import UseMemo from './components/UseMemo';
 // import Main from './components/UseCallback/Main';
 // import Parent from './components/passingChildToParent/Parent';
-import AddTodo from './components/AddTodo';
-import Todos from './components/Todos';
+// import AddTodo from './components/AddTodo';
+// import { useEffect } from 'react';
+// import Todos from './components/Todos';
+// import { useDispatch } from 'react-redux';
 
 // export const UserContext = React.createContext();
 // export const ChannelContext = React.createContext();
+// import {fetchPizza} from './components/appStore/pizzaSlice'
 
 function App() {
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(fetchPizza())
+  // }, [])
   return (
 
     <div className="App">
@@ -51,10 +58,7 @@ function App() {
       <Main /> */}
       {/* <Parent /> */}
       <h1>REDUX TOOLKIT</h1>
-        <AddTodo />
-        <Todos />
-      
-    </div>
+        </div>
   );
 }
 
